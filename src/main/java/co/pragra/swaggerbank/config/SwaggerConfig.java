@@ -18,6 +18,7 @@ public class SwaggerConfig {
     @Bean
     public Docket docket(){
         return  new Docket(DocumentationType.SWAGGER_2)
+                .useDefaultResponseMessages(false)
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("co.pragra.swaggerbank"))
                 .paths(PathSelectors.any())
