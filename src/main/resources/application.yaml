@@ -1,0 +1,17 @@
+
+spring:
+  jpa:
+    generate-ddl: true
+    hibernate:
+      ddl-auto: update
+      org.hibernate.dialect.Dialect : org.hibernate.dialect.SQLServer2008Dialect
+
+  datasource:
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost;databaseName=bankapp
+    username: sa
+    password: sa@123
+
+  rsocket:
+    server:
+      port: 8080
